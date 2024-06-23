@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="quizapp">
+        <div>
+            <h1>Quiz Application</h1>
+        </div>
+
+    </div>
+
+    <main class="main_container">
+        <div class="container">
+            <div class="que">
+                <p id="ques"></p>
+            </div>
+
+            <div class="opt">
+                <input onclick="clicked()" type="radio" name="option" id="option1">
+                <label id="opt1" for="option1"></label>
+            </div>
+            <div class="opt">
+                <input onclick="clicked()" type="radio" name="option" id="option2">
+                <label id="opt2" for="option2"></label>
+            </div>
+            <div class="opt box">
+                <input onclick="clicked()" type="radio" name="option" id="option3">
+                <label id="opt3" for="option3"></label>
+            </div>
+            <button disabled id="btn" onclick="nextques()">Next</button>
+            <button id="s-btn" onclick="submit()">Submit</button>
+            
+            <div id="time"></div>
+            <!-- <div class="t-box">
+            </div> -->
+
+            <!-- circular progress bar -->
+            <div class="pro-wrap">
+                <div class="progbar-container ">
+                    <h2>RESULT</h2>
+                    <div class="progress-bar">
+                        <span class="progbar-value">
+
+                        </span>
+                    </div>
+                    <p class="result" id="result-msg"></p>
+                    <p id="crt_ques"></p>
+                    <p>Passing percentage is 70% out of 100%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
